@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Anna Kim",
+    "activity": {
+      "reaction": "left the group",
+      "description" : "Chess Club"
+    },
+    "status" : "read",
+    "time": "2 weeks ago"
+  },
+  {
+    "name": "Nathan Peterson",
+    "activity": {
+      "reaction": "reacted to your recent post",
+      "description" : "5 end-game strategies to increase your win rate"
+    },
+    "status" : "read",
+    "time": "2 weeks ago"
+  },
+  {
+    "name": "Kimberly Smith",
+    "activity": {
+      "reaction": "commented on your picture",
+      "description" : "/assets/images/image-chess.webp"
+    },
+    "status" : "read",
+    "time": "1 week ago"
+  },
+  {
+    "name": "Rizky Hasanuddin",
+    "activity": {
+      "reaction": "sent you a private message",
+      "description" : "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
+    },
+    "status" : "read",
+    "time": "5 days ago"
+  },
+  {
+    "name": "Jacob Thompson",
+    "activity": {
+      "reaction": "has joined your group",
+      "description" : "Chess Club"
+    },
+    "status" : "unread",
+    "time": "1 day ago"
+  },
+  {
+    "name": "Angela Gray",
+    "activity": {
+      "reaction": "followed you",
+      "description" : ""
+    },
+    "status" : "unread",
+    "time": "5m ago"
+  },
+  {
+    "name": "Mark Webber",
+    "activity": {
+      "reaction": "reacted to your recent post",
+      "description" : "My first tournament today!"
+    },
+    "status" : "unread",
+    "time": "1m ago"
+  }
+]

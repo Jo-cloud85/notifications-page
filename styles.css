@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+main {
+    display: grid;
+    place-items: center;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: url("./assets/images/bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    grid-template-rows: auto 1fr;
+    row-gap: 21px;
+    background-color: hsla(210, 60%, 98%, 0.9);
+    color: hsl(219, 12%, 42%); /* default*/
+    font-weight: 500; /* default*/
+    font-size: 16px; /* default*/
+    line-height: 20px; /* default*/
+    border-radius: 15px;
+    box-shadow: 0px 20px 60px hsla(225, 40%, 47%, 0.05);
+    width: 50vw;
+    min-width: 300px;
+    max-width: 730px;
+    height: 85vh;
+    min-height: none;
+    max-height: 840px;
+    box-sizing: border-box;
+    padding: 30px 30px 0 30px;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    column-gap: 10px;
+    align-items: center;
+    padding-top: 3px;
+}
+
+header label {
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+header .n-num {
+    width: 32px;
+    height: 25px;
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+    display: grid;
+    place-content: center;
+}
+
+.n-num-toggle {
+    color: transparent; /* this is purely for toggling */
+}
+
+#mar-btn {
+    text-align: end;
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+#mar-btn:is(:hover,:active) {
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+}
+
+.notifications {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.notifications::-webkit-scrollbar { /*to hide scrollbar*/
+    display: none;
+}
+
+.nBox,
+.nBox-v2 {
+    background-color: hsla(219, 14%, 63%, 0.2); /* default color for all until status becomes read*/
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 17px 20px;
+    margin-top: 8px;
+    display: grid;
+    column-gap: 19px;
+}
+
+.nBox {
+    grid-template-columns: 45px 1fr;
+}
+
+.nBox-v2 {
+    grid-template-columns: 45px 1fr 45px;
+}
+
+.nBox-transparent-bg,
+.nBox-transparent-bg-toggle { /* this is purely for toggling */
+    background-color: transparent !important; /* when status becomes read */
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    border-radius: 23px;
+}
+
+.name,
+.activity-r,
+.activity-d-gray,
+.activity-d-blue {
+    padding-right: 5px;
+}
+
+.name {
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.name:is(:hover,:active) {
+    color: hsl(219, 85%, 26%);
+}
+
+.activity-d-gray {
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.activity-d-gray:is(:hover,:active) {
+    color: hsl(219, 85%, 26%);
+}
+
+.activity-d-blue {
+    font-weight: 800;
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.time {
+    padding-top: 3px;
+    color: hsl(219, 14%, 63%);
+}
+
+.privateMsg {
+    border: 1px solid hsla(219, 14%, 63%, 0.5);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.privateMsg:hover {
+    background-color: hsla(219, 14%, 63%, 0.8);
+    color:hsl(210, 60%, 98%);
+}
+
+.pic-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 0; 
+}
+
+.red-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    background-color: hsl(1, 90%, 64%);
+}
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+color: hsl(228, 45%, 44%);
+} */
+
+@media (max-width:768px) {
+    main {
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 0;
+        width: 100%;
+        min-width: 250px;
+        max-width: none;
+        height: 100%;
+        min-height: none;
+        max-height: none;
+        padding: 24px 16px 0 16px;
+    }
+
+    header label {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    #mar-btn {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .nBox,
+    .nBox-v2 {
+        border-radius: 10px;
+        padding: 16px;
+        margin-top: 8px;
+        display: grid;
+        column-gap: 13px;
+    }
+
+    .nBox {
+        grid-template-columns: 40px 1fr;
+    }
+    
+    .nBox-v2 {
+        grid-template-columns: 40px 1fr 40px;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .privateMsg {
+        padding: 16px;
+    }
+
+    .pic-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .red-dot {
+        margin-bottom: 1px;
+    }
+}
