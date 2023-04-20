@@ -21,7 +21,7 @@
     "name": "Kimberly Smith",
     "activity": {
       "reaction": "commented on your picture",
-      "description" : "/assets/images/image-chess.webp"
+      "description" : "./assets/images/image-chess.webp"
     },
     "status" : "read",
     "time": "1 week ago"
