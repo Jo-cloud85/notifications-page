@@ -14,7 +14,6 @@ body {
     background: url("./assets/images/bg-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
     min-height: 100vh;
 }
 
@@ -31,7 +30,7 @@ main {
     width: 50vw;
     min-width: 300px;
     max-width: 730px;
-    height: 85vh;
+    height: 90vh;
     min-height: none;
     max-height: 840px;
     box-sizing: border-box;
