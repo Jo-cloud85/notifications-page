@@ -71,12 +71,11 @@ header .n-num {
 #mar-btn {
     text-align: end;
     cursor: pointer;
-    transition: color 0.15s;
+    transition: all 0.4s ease;
 }
 
 #mar-btn:is(:hover,:active) {
     color: hsl(219, 85%, 26%);
-    font-weight: 800;
 }
 
 .notifications {
@@ -132,25 +131,26 @@ img {
     color: hsl(224, 21%, 14%);
     font-weight: 800;
     cursor: pointer;
+    transition: all 0.4s ease;
+    text-decoration: none;
 }
 
-.name:is(:hover,:active) {
+.name:is(:hover,:active),
+.activity-d-gray:is(:hover,:active),
+.activity-d-blue {
     color: hsl(219, 85%, 26%);
+}
+
+.activity-d-gray,
+.activity-d-blue {
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-decoration: none;
 }
 
 .activity-d-gray {
-    font-weight: 800;
-    cursor: pointer;
-}
-
-.activity-d-gray:is(:hover,:active) {
-    color: hsl(219, 85%, 26%);
-}
-
-.activity-d-blue {
-    font-weight: 800;
-    color: hsl(219, 85%, 26%);
-    cursor: pointer;
+    color: inherit; /*to remove default anchor tag hyperlink color*/
 }
 
 .time {
