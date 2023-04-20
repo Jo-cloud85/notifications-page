@@ -48,9 +48,11 @@ async function loadNotification() {
         time.classList.add('time');
         
         //create element(s) & add classes within activity div
-        const name = document.createElement('span');
+        const name = document.createElement('a');
+        name.href='#'
         const activityR = document.createElement('span');
-        const activityD = document.createElement('span');
+        const activityD = document.createElement('a');
+        activityD.href='#'
         
         //add classes & set text to name, activityR (sub-divs of activity div), classes for activityD to add later due to special conditions
         name.classList.add('name');
@@ -67,7 +69,7 @@ async function loadNotification() {
         
         activityD.textContent = activityDA;
         
-        //append first because the sequence of elements or divs appended matters
+        //append first as the sequence of elements or divs appended matters
         activity.appendChild(name);
         activity.appendChild(activityR);
         activity.appendChild(activityD);
@@ -102,7 +104,7 @@ async function loadNotification() {
             redDots.push(redDot); //push new elements into the redDots array
         }
 
-        //append first because the sequence of elements or divs appended matters
+        //append first as the sequence of elements or divs appended matters
         nBox.appendChild(profileImg);
         nBox.appendChild(info);
 
