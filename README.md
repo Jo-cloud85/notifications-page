@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Jo-cloud85/notifications-page.git](https://github.com/Jo-cloud85/notifications-page.git)
+- Live Site URL: [https://jo-cloud85.github.io/notifications-page/](https://jo-cloud85.github.io/notifications-page/)
 
 ## My process
 
