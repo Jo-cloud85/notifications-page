@@ -64,6 +64,26 @@ The trickiest part for me in this whole approach comes in the sequencing. The se
 
 Overall, I am glad I gave myself this challenge and made it through. I hope this will set a foundation for me when I am more familiarize with backend technologies like node.js and mongoDB, as well as, APIs.
 
+- Expected html structure to serve as guide for js file
+```
+<div class="nBox">
+  <img src="" alt="'">
+  <div class="info">
+    <div class="activity">
+      <span class="name"></span>
+      <span class="activity-r"></span>
+      <span class="activity-d"></span>
+      <span class="red-dot"></span> only added if status is unread
+    </div>
+    <p class="time"></p>
+    <div class="privateMsg"> only added if last word activity-r is 'message'
+      <p class="privateMsg-text"></p>
+    </div>
+  </div>
+  <img class="pic-img" src="" alt=""> only added if last word activity-r is 'picture'
+</div>
+```
+
 ## Author
 
 - Frontend Mentor - [@Jo-cloud85](https://www.frontendmentor.io/profile/Jo-cloud85)
